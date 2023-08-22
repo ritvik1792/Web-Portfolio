@@ -385,7 +385,6 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  /* border: 1px solid red; */
   height: fit-content;
 }
 

@@ -19,16 +19,6 @@ export const records=[
         }
     },
     {
-        type:"certificate",
-        name:"Certification",
-        company:"Coding Blocks",
-        title:"C++ DSA Master Course",
-        year: "2021",
-        extra:{
-            url:"https://drive.google.com/file/d/1wB5sDEJAn9OO8gMwb2HXIv0E5jxCkILB/view?usp=sharing"
-        }
-    },
-    {
         type:"paper",
         name:"Research Paper",
         journal:"IEEE",
@@ -36,6 +26,16 @@ export const records=[
         year: "2022",
         extra:{
             url:"https://ieeexplore.ieee.org/document/9753052"
+        }
+    },
+    {
+        type:"certificate",
+        name:"Certification",
+        company:"Coding Blocks",
+        title:"C++ DSA Master Course",
+        year: "2021",
+        extra:{
+            url:"https://drive.google.com/file/d/1wB5sDEJAn9OO8gMwb2HXIv0E5jxCkILB/view?usp=sharing"
         }
     },
     {
