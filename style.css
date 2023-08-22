@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 body {
@@ -178,11 +179,27 @@ section {
   grid-column: 1/6;
 }
 
+.leetcode-card{
+  border-radius: 1rem;
+  transform: translate(2.5rem, 11.2rem);
+  box-shadow: 0 0 10px 10px rgb(226, 226, 226);
+  width: 26rem;
+  height: 12rem;
+  transition: transform 0.25s ease-out;
+}
+
+.leetcode-card:hover{
+  transform: scale(1.12) translate(2.5rem, 11.2rem);
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+.section__pic-container img{
+  border-radius: 50%;
 }
 
 .section__text {
@@ -213,6 +230,63 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+.socials:hover{
+  opacity: 0.6;
+}
+
+.animation {
+  /* border: 1px solid red; */
+  height:3rem;
+  width: 20rem;
+  overflow:hidden;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.section__text::before{
+  content: '{';
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 30px;
+  font-size: 3.1rem;
+  position: relative;
+  top: 9.9rem;
+  right: 11rem;
+}
+.section__text::after{
+  content: '}';
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 30px;
+  font-size: 3.1rem;
+  position: relative;
+  top: -10.9rem;
+  right: -12rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 10s infinite;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -4.2rem;}
+  30% {margin-top: -4.2rem;}
+  40% {margin-top: -9.5rem;}
+  60% {margin-top: -9.5rem;}
+  70% {margin-top: -4.2rem;}
+  80% {margin-top: -4.2rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
 }
 
 /* ICONS */
@@ -290,9 +364,16 @@ section {
 
 #journey {
   position: relative;
-  grid-column: 1/4;
-  /* border: 1px solid red; */
-  margin-right: 4rem;
+  grid-column: 1/6;
+  margin-right: 1rem;
+  transform: translate(-4rem,0);
+
+}
+.record{
+  transition: transform 0.2s ease-out;
+}
+.record:hover{
+  transform: scale(1.2);
 }
 
 .about-containers {
@@ -416,8 +497,17 @@ article .icon {
   position: relative;
   grid-column: 1/6;
   /* display: none; */
+  height: fit-content;
+  width: fit-content;
+  transform: translateY(-13rem);
 }
 
+.project{
+  transition: transform 0.2s ease-out;
+}
+.project:hover{
+  transform: scale(1.2);
+}
 .projects-container{
   display: flex;
   flex-wrap: wrap;
@@ -446,10 +536,15 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.iactive{
+  display: none;
+}
+
 /* CONTACT */
 
 #contact {
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: center;
   flex-direction: column;
   margin: 1rem 0;
@@ -498,9 +593,12 @@ footer {
   height: 26vh;
   margin: 0 1rem;
   grid-column: 1/6;
-  margin: 0 10rem;
 }
 
 footer p {
   text-align: center;
 }
+
+
+
+/* Journey animated component*/
