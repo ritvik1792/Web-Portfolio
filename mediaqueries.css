@@ -15,7 +15,7 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
+  #journey,
   .experience-details-container {
     margin-top: 2rem;
   }
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #contact,
   footer {
     height: 40vh;
@@ -59,11 +59,50 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+
+  #op-bar{
+    margin-top: 15rem;
+  }
+  #projects{
+    flex-direction: column;
+  }
   .about-containers,
   .contact-info-upper-container,
-  .btn-container {
+  .btn-container,
+  .projects-container {
     flex-wrap: wrap;
   }
+  #journey{
+    transform: scale(1);
+  }
+  [data-class="journey"]{
+    flex-direction: column;
+    margin-top: 0rem;
+    transform: scale(0.9);
+
+    
+  }
+  #contact{
+    width: 25rem;
+    margin-left: 1rem;
+  }
+  .section_rating{
+    display: none;
+  }
+  .projects-container{
+    flex-direction: column;
+    width: calc(100vw - 2rem);
+    justify-content: center;
+  }
+  
+  .project{
+    width: 350px;
+  }
+
+  .project img{
+    transform: scale(0.8);
+  }
+
   .contact-info-container {
     margin: 0;
   }
@@ -87,6 +126,38 @@
     height: 46vw;
     justify-content: center;
   }
+  .section__text::after{
+    top: -11rem;
+    right: -8rem;
+  }
+  
+  .section__text::before{
+    top: 8.3rem;
+    right: 8.7rem;
+  }
+
+  .animation{
+    width: 15rem;
+    transform: translateX(3.5rem);
+  }
+  .animation > div > div {
+    height: 2rem;
+    margin-bottom: 2.7rem;
+  }
+  
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -3.9rem;}
+    30% {margin-top: -3.9rem;}
+    40% {margin-top: -8.7rem;}
+    60% {margin-top: -8.7rem;}
+    70% {margin-top: -3.9rem;}
+    80% {margin-top: -3.9rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
@@ -97,3 +168,5 @@
     text-align: justify;
   }
 }
+
+
