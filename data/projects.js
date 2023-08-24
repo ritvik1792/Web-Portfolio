@@ -9,7 +9,7 @@ export const projects=[
     {
         id:'prj-e-commerce',
         name: "E-Commerce Website",
-        tools: ["HTML","CSS","Javascript","Node.js","Express.js","SQL","MongoDB","REST API\'s"],
+        tools: ["HTML","CSS","Javascript","Node.js","Express.js","SQL","JSON","REST API\'s"],
         github: "https://github.com/ritvik1792/E-Commerce-Website",
         desc: "A user-centric web application facilitating customer product viewing, ordering, and tracking. Project description: This project utilizes HTML, CSS, JavaScript, Node.js, SQL, Express.js, WEB API's, and REST API's for development. Functionalities: Product browsing, feature exploration, cart management, user login, and product tracking functionalities."
     },
